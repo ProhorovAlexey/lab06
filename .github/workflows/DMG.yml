@@ -12,7 +12,7 @@ jobs:
    - name: build
      run: |
       cd solver_application
-      cmake -DCPACK_GENERATOR_DEB=ON -B ./output
+      cmake -DCPACK_GENERATOR_DMG=ON -B ./output
       cd output
       make package
       make package_source
