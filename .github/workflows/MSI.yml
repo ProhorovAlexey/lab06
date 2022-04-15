@@ -12,7 +12,7 @@ jobs:
    - name: build
      run: |
       cd solver_application
-      cmake -DCPACK_GENERATOR_WIX=ON -B ./output
+      cmake -B ./output
       cd output
       cpack -C CPackConfig.cmake -G "WIX"
    - name: create_release
