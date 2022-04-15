@@ -12,7 +12,7 @@ jobs:
    - name: build
      run: |
       cd solver_application
-      cmake -DCPACK_GENERATOR_RPM=ON -B ./output
+      cmake -B ./output
       cd output
       cpack -G RPM
    - name: create_release
