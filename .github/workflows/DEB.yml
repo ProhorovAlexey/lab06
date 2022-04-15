@@ -12,7 +12,7 @@ jobs:
    - name: build
      run: |
       cd solver_application
-      cmake -DCPACK_GENERATOR_DEB=ON -B ./output
+      cmake -B ./output
       cd output
       cpack -G DEB
    - name: create_release
